@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>InlineXssAttack</title>
+    <script type="text/javascript" nonce="b16a118a15094ba4bf329d03b651556e">
+        console.log("I am the XSS attack");
+    </script>
+    @Html.ScriptBlock("https://code.jquery.com/jquery-3.3.1.min.js")
+</head>
+<body>
+    <div> 
+        <h1>Inline XSS Attack</h1>
+    </div>
+</body>
+</html>

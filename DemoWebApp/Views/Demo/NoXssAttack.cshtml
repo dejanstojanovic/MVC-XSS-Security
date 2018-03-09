@@ -1,0 +1,20 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NoXssAttack</title>
+    @Html.InlineScriptBlock("~/Scripts/SampleScript.js", false)
+    @Html.ScriptBlock("https://code.jquery.com/jquery-3.3.1.min.js")
+</head>
+<body>
+    <div>
+        <h1>No XSS Attack</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <p>
+            @Html.ActionLink("Inline XSS Attack", "InlineXssAttack", "Demo")
+        </p>
+        <p>
+            @Html.ActionLink("Block XSS Attack", "BlockXssAttack", "Demo")
+        </p>
+        <p>
+            @Html.ActionLink("No XSS Attack", "NoXssAttack", "Demo")
+        </p>
+    </div>
+</body>
+</html>
